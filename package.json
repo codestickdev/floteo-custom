@@ -1,0 +1,25 @@
+{
+  "name": "AktorskaWWa",
+  "version": "1.0.0",
+  "description": "AktorskaWWa",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jquery": "^2.0.41",
+    "browser-sync": "^2.24.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.1.6",
+    "jquery": "^3.2.1",
+    "require.js": "^1.0.0",
+    "requirejs": "^2.3.3",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC"
+}

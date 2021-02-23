@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mail</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-board" transform="translate(-1464.000000, -43.000000)" stroke="#0D154A" stroke-width="1.77967914">
+            <g id="mail" transform="translate(1465.000000, 39.000000)">
+                <g id="Mail" transform="translate(0.000000, 5.200000)">
+                    <g id="Fllopy-Copy" transform="translate(10.837957, 7.163440) rotate(90.000000) translate(-10.837957, -7.163440) translate(3.837957, -2.836560)">
+                        <rect id="Combined-Shape" x="0" y="0" width="13.9105533" height="19.5764706" rx="0.889839572"></rect>
+                    </g>
+                    <g id="Group-2" stroke-linejoin="round" transform="translate(1.635327, 0.000000)">
+                        <polygon id="Path-3" transform="translate(9.508245, 10.455615) rotate(-180.000000) translate(-9.508245, -10.455615) " points="-1.33475936e-07 6.67379679 9.41439474 14.2374332 19.0164901 6.67379679"></polygon>
+                        <polygon id="Path-3" fill="#FFFFFF" fill-rule="nonzero" points="0 0 9.41439487 9.34331551 19.0164902 0"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

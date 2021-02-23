@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 286.7 286.7">
+<style type="text/css">
+	.check-st1{fill:none;stroke:#18d5a2;stroke-width:24;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="check-st1" d="M270.2,109.2c2.9,10.9,4.5,22.3,4.5,34.1c0,72.5-58.8,131.3-131.3,131.3S12,215.9,12,143.3S70.8,12,143.3,12
+	c30.4,0,58.4,10.3,80.7,27.7"/>
+<polyline class="check-st1" points="86.6,131.7 139.6,186.4 251.4,68.8 "/>
+</svg>

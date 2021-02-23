@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Floteo</title>
+    <meta name="description" content="Floteo" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css?v=1.0" />
+
+    <script src="libs/jquery.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
+    <script src="libs/jquery.ui.touch-punch.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="images/logo.svg" class="header__img" />
+    </header>
+    <div class="top">
+      <h2 class="top__head">
+        Porównywarka leasingowa <span>Nr 1 w Polsce</span>, to:
+      </h2>
+      <ul class="top__list">
+        <li class="top__list-item">
+          <div class="top__list-image"><img src="images/168.svg" /></div>
+          <div class="top__list-text">
+            Przeciętnie <span>11.680 PLN</span> oszczędności na jednym zakupie
+          </div>
+        </li>
+        <li class="top__list-item">
+          <div class="top__list-image"><img src="images/126.svg" /></div>
+          <div class="top__list-text">
+            Porównanie najczęściej 37 najlepszych ofert dostępnych na rynku (leasing + najem)
+          </div>
+        </li>
+        <li class="top__list-item">
+          <div class="top__list-image"><img src="images/24.svg" /></div>
+          <div class="top__list-text">
+            Decyzja leasingowa już w niecałą godzinę
+          </div>
+        </li>
+        <li class="top__list-item">
+          <div class="top__list-image"><img src="images/74.svg" /></div>
+          <div class="top__list-text">
+            Oferta wynajmu oraz leasingu w jednym porównaniu
+          </div>
+        </li>
+      </ul>
+    </div>
+    <form class="content" id="form" action="send.php">
+      <img class="oval --oval1" src="images/oval1.png" />
+      <img class="oval --oval2" src="images/oval2.png" />
+      <div class="tabs">
+        <div class="tab --active">
+          <div class="content__head">Specyfikacja finansowania</div>
+          <div class="content__body">
+            <div class="content__sliders">
+              <div class="content__slider" id="WartoscSamochodu" data-min="40000" data-max="300000" data-step="1000" data-type="price">
+                <div class="content__head2">Wartość samochodu</div>
+                <div class="content__slider-button --minus"></div>
+                <div class="content__slider-button --plus"></div>
+                <div class="content__slider-value"></div>
+                <div class="content__slider-item"></div>
+                <input type="hidden" name="WartoscSamochodu" />
+              </div>
+              <div class="content__slider" id="WplataWlasna" data-min="0" data-max="45" data-step="1" data-type="percent">
+                <div class="content__head2">Wpłata własna</div>
+                <div class="content__slider-button --minus"></div>
+                <div class="content__slider-button --plus"></div>
+                <div class="content__slider-value"></div>
+                <div class="content__slider-item"></div>
+                <input type="hidden" name="WplataWlasna" />
+              </div>
+              <div class="content__slider" id="Wykup" data-min="1" data-max="30" data-step="1" data-type="percent">
+                <div class="content__head2">Wykup</div>
+                <div class="content__slider-button --minus"></div>
+                <div class="content__slider-button --plus"></div>
+                <div class="content__slider-value"></div>
+                <div class="content__slider-item"></div>
+                <input type="hidden" name="Wykup" />
+              </div>
+            </div>
+            <div class="content__radios">
+              <div class="content__head2">Okres leasingu</div>
+              <div class="content__radio">
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres1"
+                  name="OkresLeasingu"
+                  value="24"
+                  checked
+                />
+                <label class="content__radio-label" for="okres1">24m-ce</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres2"
+                  name="OkresLeasingu"
+                  value="36"
+                />
+                <label class="content__radio-label" for="okres2">36m-cy</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres3"
+                  name="OkresLeasingu"
+                  value="48"
+                />
+                <label class="content__radio-label" for="okres3">48m-cy</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres4"
+                  name="OkresLeasingu"
+                  value="60"
+                />
+                <label class="content__radio-label" for="okres4">60m-cy</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres5"
+                  name="OkresLeasingu"
+                  value="72"
+                />
+                <label class="content__radio-label" for="okres5">72m-ce</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres6"
+                  name="OkresLeasingu"
+                  value="84"
+                />
+                <label class="content__radio-label" for="okres6">84m-ce</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres7"
+                  name="OkresLeasingu"
+                  value="96"
+                />
+                <label class="content__radio-label" for="okres7">96m-cy</label>
+                <input
+                  class="content__radio-item"
+                  type="radio"
+                  id="okres8"
+                  name="OkresLeasingu"
+                  value="108"
+                />
+                <label class="content__radio-label" for="okres8">108m-cy</label>
+              </div>
+            </div>
+            <div class="content__button --next">Dalej</div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="content__head">Dane kontaktowe</div>
+          <div class="content__body --dane">
+            <label class="content__label" for="nip">NIP</label>
+            <input
+              class="content__input"
+              type="text"
+              id="nip"
+              name="Nip"
+              required
+            />
+            <label class="content__label" for="email">Email</label>
+            <input
+              class="content__input"
+              type="email"
+              id="email"
+              name="Email"
+              required
+            />
+            <label class="content__label" for="tel">Numer telefonu</label>
+            <input
+              class="content__input"
+              type="text"
+              id="tel"
+              name="Tel"
+              required
+            />
+            <input
+              class="content__checkbox"
+              type="checkbox"
+              id="accept"
+              name="Accept"
+              required
+            />
+            <label class="content__checkbox-label" for="accept">
+              Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; (tekst jednolity: Dz. U. 2016 r. poz. 922) oraz akceptuję <a target="_blank" href="https://floteocars.pl/polityka-prywatnosci/">Politykę Prywatności</a>.
+            </label>
+            <button class="content__button" type="submit">
+              Szybkie porównanie
+            </button>
+          </div>
+        </div>
+
+        <div class="tabs__pagination">
+          <div class="tabs__pagination-item --active"></div>
+          <div class="tabs__pagination-item"></div>
+        </div>
+      </div>
+    </form>
+    <div class="alert"></div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

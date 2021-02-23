@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-board" transform="translate(-1022.000000, -224.000000)">
+            <g id="Search" transform="translate(1023.000000, 225.000000)">
+                <ellipse id="Oval" stroke="#BDBDBD" stroke-width="1.24444444" cx="5.02330624" cy="5.16444444" rx="5.02330624" ry="5.16444444"></ellipse>
+                <path d="M10.666021,7.26465039 L11.1567296,7.25854387 C11.5003472,7.25435006 11.7823434,7.52946826 11.7865855,7.87308591 C11.786633,7.87820649 11.786633,7.88332766 11.7865855,7.88844823 L11.714645,13.7156276 C11.7104767,14.0532614 11.4377852,14.3259529 11.1001514,14.3301212 L10.6094428,14.3362278 C10.2658251,14.3404216 9.98382903,14.0653034 9.97958684,13.7216857 C9.97953943,13.7165651 9.97953943,13.711444 9.97958684,13.7063234 L10.0515273,7.87914405 C10.0556956,7.54151022 10.3283871,7.26881872 10.666021,7.26465039 Z" id="Rectangle" fill="#BDBDBD" fill-rule="nonzero" transform="translate(10.883086, 10.797386) rotate(-45.000000) translate(-10.883086, -10.797386) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

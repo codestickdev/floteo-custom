@@ -1,0 +1,284 @@
+.btn_custom {
+  border-radius: 0px;
+  height: auto;
+  padding: 13px 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  background-color: $primary-color;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  border: 1px solid $primary-color;
+
+  &.--second {
+    background: #fff;
+    border-radius: 30px;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    margin: 0;
+    padding: 7px 15px;
+
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+
+  &.--buy-now {
+    border-radius: 30px;
+    background: #339aed;
+    color: #fff;
+    border: 2px solid #339aed;
+    max-width: none;
+    margin: 0;
+    padding: 7px 15px;
+
+    &:hover {
+      color: #339aed;
+      background: #fff;
+    }
+  }
+
+  &.--final-price {
+    border-radius: 30px;
+    max-width: none;
+    margin: 0;
+    padding: 7px 15px;
+    margin-right: 10px;
+  }
+
+  &.--spec {
+    background: #fff;
+    color: $primary-color;
+    border-radius: 30px;
+    max-width: 170px;
+    margin: 0;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      position: relative;
+      top: 1px;
+    }
+
+    &:hover {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+
+  &.search {
+    img,
+    svg {
+      max-width: 16px;
+      max-height: 16px;
+      position: absolute;
+      top: 50%;
+      transform: translate(-0%, -50%);
+      right: 15px;
+      transition: all 150ms linear;
+
+      path,
+      rect {
+        fill: #fff;
+        transition: all 150ms linear;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: #fff;
+
+    &.search {
+      img,
+      svg {
+        path,
+        rect {
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.btn_style1 {
+  background: #212d61;
+  color: white;
+  border: 1px solid #212d61;
+}
+
+.bttn {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border: 1px solid #00d198;
+  background: #00d198;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 11px 18px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 209, 152, 0.3);
+  cursor: pointer;
+  white-space: nowrap;
+  justify-content: center;
+  position: relative;
+  height: 40px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.bttn.--big {
+  padding: 18px;
+}
+
+.bttn.--transparent {
+  border: 1px solid #00d198;
+  background: transparent;
+  color: #00d198;
+  box-shadow: none;
+
+  &:hover {
+    color: #00d198;
+  }
+}
+
+.bttn.--secondary {
+  border: 1px solid #353d61;
+  background: #353d61;
+  box-shadow: 0px 3px 8px 0px rgba(53, 61, 97, 0.3);
+}
+
+.bttn.--simple {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #00d198;
+  font-weight: 700;
+}
+
+.bttn__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background: #00d198;
+  color: #fff;
+  border-radius: 100%;
+  margin-left: -15px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  margin-right: 8px;
+}
+
+.bttn__icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 50%;
+}
+
+.bttn__form {
+  top: 0;
+  left: 0;
+  margin-left: -40px;
+  padding-left: 40px;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.bttn__input {
+  width: 60px;
+  height: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  padding-right: 5px;
+  transition: width 0.3s;
+}
+
+.bttn__input::placeholder {
+  color: $primary-color;
+}
+
+.btn {
+  .toggle__checkbox-validate {
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: -30%;
+    width: 160%;
+    background: #fff;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 14px;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    white-space: normal;
+  }
+
+  &.invalid {
+    .toggle__checkbox-validate {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .btn_custom {
+    &.--final-price,
+    &.--buy-now,
+    &.--second {
+      padding: 7px 15px;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .bttn {
+    padding: 11px 28px;
+  }
+
+  .bttn__icon {
+    margin-left: -24px;
+  }
+
+  .bttn__input:focus {
+    width: 200px;
+  }
+
+  .btn_custom {
+    &.--final-price,
+    &.--buy-now,
+    &.--second {
+      padding: 13px 15px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .bttn__form {
+    pointer-events: all;
+  }
+}

@@ -1,0 +1,17 @@
+.default_page{
+  .inner{
+    padding: 40px 0;
+    border-bottom: 1px solid #EAEDF1;
+    ul, ol{
+      padding-left: 20px;
+    }
+    p, li{
+      font-size: 16px;
+      line-height: 2.0;
+      margin-bottom: 20px;
+      &:last-child{
+        margin: 0px;
+      }
+    }
+  }
+}

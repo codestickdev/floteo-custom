@@ -1,0 +1,164 @@
+.floteo__numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  margin-top: 20px;
+  padding: 25px 0;
+}
+
+.floteo__numbers-head {
+  color: #4e4e59;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 33%;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    height: 3px;
+    position: absolute;
+    background: #00d198;
+    border-radius: 2px;
+    margin-top: 26px;
+  }
+}
+
+.floteo__numbers-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.floteo__numbers-item {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 15px 0;
+}
+
+.floteo__numbers-data {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  border: 1px dashed #00d198;
+}
+
+.floteo__numbers-data-values {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .desc {
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+}
+
+.floteo__numbers-data-number {
+  font-size: 48px;
+  line-height: 48px;
+  color: #4e4e59;
+  font-weight: 700;
+  background: url("../img/in-numbers-arc.svg") no-repeat center top;
+  background-size: contain;
+  width: 160px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.floteo__numbers-data-number.--small {
+  font-size: 25px;
+}
+
+.floteo__numbers-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  transform: translate3d(-50%, -50%, 0);
+  background: #00d198;
+  border-radius: 100%;
+
+  &.--first {
+    top: 10%;
+    left: 80%;
+  }
+
+  &.--second {
+    top: 76%;
+    left: 7%;
+  }
+
+  &.--third {
+    top: 76%;
+    left: 93%;
+  }
+
+  &.--fourth {
+    top: 6%;
+    left: 26%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .floteo__numbers-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .floteo__numbers-item {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .floteo__numbers-wrap {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .floteo__numbers {
+    padding-bottom: 76px;
+    padding-top: 53px;
+  }
+
+  .floteo__numbers-wrap {
+    margin-top: 80px;
+    width: 1170px;
+  }
+
+  .floteo__numbers-item {
+    width: calc(100% / 3);
+    margin: 0;
+  }
+}
+
+@media(min-width:1600px) {
+  .floteo__numbers-wrap {
+    width: 1320px;
+  }
+}

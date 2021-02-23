@@ -1,0 +1,31 @@
+.alert {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 209, 152, 0.8);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 38px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+}
+
+.alert.--opened {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (min-width: 1024px) {
+  .alert {
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    width: 440px;
+  }
+}

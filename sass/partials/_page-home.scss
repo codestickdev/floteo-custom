@@ -1,0 +1,147 @@
+.home_top {
+  min-height: 520px;
+  background: url("../img/home_top.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .inner {
+    position: absolute;
+    top: 40%;
+    transform: translate(-0%, -50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.home_search {
+  background-color: #fff;
+  padding: 30px 90px;
+  margin-top: 110px;
+  position: relative;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 80px;
+}
+
+.section_header {
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  &.with_line {
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #eaecee;
+    }
+  }
+}
+
+.segment_header {
+  position: relative;
+  text-align: center;
+  display: block;
+  max-width: 1130px;
+  margin: 15px auto 0;
+
+  span {
+    display: inline-block;
+    background-color: #fbfbfb;
+    padding: 0 40px;
+    z-index: 1;
+    position: relative;
+    color: #929294;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eaecee;
+  }
+}
+
+// .custom-slide {
+//   .slick-slide {
+//     padding: 50px 10px;
+
+//     &.slick-active {
+//       .tile {
+//         transform: scale(1);
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   &.slickFix {
+//     .slick-track {
+//       transform: translate3d(0, 0, 0) !important;
+
+//       .tile {
+//         transform: scale(1);
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
+
+.home_baner {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  padding: 250px 0 200px 0;
+  margin-top: 50px;
+
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.4;
+    max-width: 580px;
+  }
+
+  p {
+    max-width: 470px;
+    font-size: 20px;
+    color: #fff;
+    margin: 90px 0;
+    padding-left: 60px;
+    border-left: 2px solid #fff;
+    line-height: 1.6;
+  }
+
+  .btn_custom {
+    margin: 0px;
+  }
+}

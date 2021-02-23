@@ -1,0 +1,297 @@
+.car-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #d0cbcb;
+  position: relative;
+
+  $placeholderColor: #989fa9;
+
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $placeholderColor;
+  }
+
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $placeholderColor;
+    opacity: 1;
+  }
+
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $placeholderColor;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $placeholderColor;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $placeholderColor;
+  }
+
+  ::placeholder {
+    /* Most modern browsers support this now. */
+    color: $placeholderColor;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  label {
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  select {
+    width: 100%;
+    display: block;
+    border: 1px solid #eaeaea;
+    padding: 7px 10px;
+    box-shadow: 0 0 5px #f1f1f1;
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+.carPopUpButton {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate3d(-14px, -50%, 0);
+  background: #00d197;
+  color: #fff;
+  z-index: 50;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 16px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translate3d(0px, -50%, 0);
+  }
+}
+
+.car-modal__head {
+  b,
+  p {
+    color: #4b5366;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+  }
+
+  b {
+    font-size: 18px;
+    letter-spacing: 1.7px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.car-modal__body {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 5px #f1f1f1;
+    border: 1px solid #eaeaea;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 5px 20px;
+    margin-top: 15px;
+    resize: none;
+    margin-bottom: 5px;
+
+    &.wpcf7-not-valid {
+      border: 1px solid #ff0606;
+    }
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    display: block;
+    color: #fff;
+    background: #00d197;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 45px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .wpcf7-list-item {
+    margin: 0;
+  }
+
+  .wpcf7-response-output {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 300;
+    color: #4b5366;
+    border: 2px solid #ff0606;
+  }
+
+  .wpcf7-mail-sent-ok {
+    border: 2px solid #00d197;
+  }
+
+  input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
+    background: #00d197;
+    background-image: url("../img/ico_check_tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #00d197;
+  }
+
+  .wpcf7-acceptance.wpcf7-not-valid .wpcf7-list-item-label {
+    color: #ff0606;
+
+    &:before {
+      border: 1px solid #ff0606;
+    }
+  }
+
+  .wpcf7-list-item-label {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 24px;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      border: 1px solid #4b5366;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    a {
+      color: #00d197;
+      font-weight: 700;
+    }
+  }
+}
+
+.car-modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  color: #4b5366;
+  cursor: pointer;
+}
+
+.car-modal__close-svg {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.car-modal__logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 150px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.wpcf7-recaptcha {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .carPopUpButton.--show {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .car-modal {
+    margin-top: 100px;
+  }
+
+  .car-modal__head {
+    b,
+    p {
+      line-height: 24px;
+    }
+
+    b {
+      font-size: 24px;
+      letter-spacing: 1.7px;
+    }
+
+    p {
+      font-size: 20px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .car-modal__body {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .car-modal {
+    padding: 25px 100px;
+  }
+}

@@ -1,0 +1,120 @@
+.floteo__benefits {
+  max-width: 1555px;
+  background: url("../img/benefits-bg-mobile.png") no-repeat center center;
+  background-size: cover;
+  padding: 37px 0;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.floteo__benefits-text {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+}
+
+.floteo__benefits-button {
+  display: inline-flex;
+  padding: 11px 44px;
+}
+
+.floteo__benefits-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floteo__benefits-main {
+  background: #fff;
+  position: relative;
+  padding: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: #f7f7f9;
+  }
+}
+
+@media (min-width: 1024px) {
+  .floteo__benefits {
+    padding: 66px 0;
+    background-image: url("../img/benefits-bg-full.png");
+  }
+
+  .floteo__benefits-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 850px;
+  }
+
+  .floteo__benefits-text {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      text-align: left;
+      margin-bottom: 28px;
+      max-width: 525px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media(min-width:1600px) {
+
+  .floteo__benefits-text h1,
+  .floteo__benefits-text h2,
+  .floteo__benefits-text h3,
+  .floteo__benefits-text h4,
+  .floteo__benefits-text h5,
+  .floteo__benefits-text h6,
+  .floteo__benefits-text p {
+    max-width: 550px;
+  }
+
+  .floteo__benefits-wrap {
+    max-width: 100%;
+  }
+
+  .floteo__benefits-button {
+    position: relative;
+    right: 18px;
+    top: 6px;
+  }
+}
