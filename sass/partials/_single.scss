@@ -794,21 +794,25 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  border: 1px solid #e3e3e7;
   font-weight: 300;
   color: #47515b;
-  margin: 3px;
-  border-radius: 25px;
-  padding: 15px;
-  height: 36px;
+  padding: 0 10px;
   text-align: center;
   cursor: pointer;
-  min-width: 210px;
   position: relative;
 
+  .tooltip-main{
+    display: none !important;
+  }
+
   .slider.slider-horizontal .slider-track {
-    height: 2px;
+    height: 5px;
     margin-top: -1px;
+    box-shadow: unset;
+    background: #F2F2F2;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+
   }
 
   .slider-handle {
@@ -816,7 +820,7 @@
     width: 20px;
     height: 20px;
     background: #00d198;
-    border-radius: 6px;
+    border-radius: 100%;
 
     &:after {
       content: "";
@@ -827,7 +831,7 @@
       background: #fff;
       width: 8px;
       height: 8px;
-      border-radius: 2px;
+      border-radius: 100%;
     }
   }
 

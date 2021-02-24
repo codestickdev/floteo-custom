@@ -168,33 +168,38 @@
 			})
 		}
 
-		if ($("#priceSlider").length > 0) {
-			var min = parseFloat($('#priceSlider').attr('data-min'));
-			var max = parseFloat($('#priceSlider').attr('data-max'));
-			var step = parseFloat($('#priceSlider').attr('data-step'));
-
-			$("#priceSlider").on('slideEnabled', function (event, ui) {
-				refresh_price();
-				$('.price-slider__value').text((min || 0) + ' zł netto');
-			});
-
-			$("#priceSlider").slider({
-				value: min || 0,
-				min: min || 0,
-				max: max || 20000,
-				step: step
-			});
-
-			$("#priceSlider").on('slide', function (event, ui) {
-				refresh_price();
-				$('.price-slider__value').text(event.value + ' zł netto');
-			});
-
-			$("#priceSlider").on('slideStop', function (event, ui) {
-				refresh_price();
-				$('.price-slider__value').text(event.value + ' zł netto');
-			});
-		}
+		var priceRanges = $('.priceSlider');
+		
+		$(priceRanges).each(function(){
+			var currentValueWrap = $(this).parent().parent().find('.depositValue__value').find('span');
+			if ($(this).length > 0) {
+				var min = parseFloat($(this).attr('data-min'));
+				var max = parseFloat($(this).attr('data-max'));
+				var step = parseFloat($(this).attr('data-step'));
+	
+				$(this).on('slideEnabled', function (event, ui) {
+					refresh_price();
+					$(currentValueWrap).text((min || 0));
+				});
+	
+				$(this).slider({
+					value: min || 0,
+					min: min || 0,
+					max: max || 20000,
+					step: step
+				});
+	
+				$(this).on('slide', function (event, ui) {
+					refresh_price();
+					$(currentValueWrap).text(event.value);
+				});
+	
+				$(this).on('slideStop', function (event, ui) {
+					refresh_price();
+					$(currentValueWrap).text(event.value);
+				});
+			}
+		});
 
 		$('.hamburger').click(function () {
 			$(this).toggleClass('is-active');
@@ -447,48 +452,52 @@
 
 			var priceValue = $('.inputValue[data-time="' + valueTime + '"][data-limit="' + valueLimit + '"]').val();
 
-			var checkOne2_checked = $('.custom_checkbox_wrapper #checkOne2.--enabled').is(':checked');
+			var checkOne2_checked = $('.selectServices__box #checkOne2.--enabled').is(':checked');
 			if (checkOne2_checked) {
-				var tiresPrice = $('.custom_checkbox_wrapper #checkOne2.--enabled').attr('data-price');
+				var tiresPrice = $('.selectServices__box #checkOne2.--enabled').attr('data-price');
 
 				if (tiresPrice) {
 					priceValue = parseInt(priceValue) + parseInt(tiresPrice);
 				}
 			}
 
-			var checkOne3_checked = $('.custom_checkbox_wrapper #checkOne3.--enabled').is(':checked');
+			var checkOne3_checked = $('.selectServices__box #checkOne3.--enabled').is(':checked');
 			if (checkOne3_checked) {
-				var insurancePrice = $('.custom_checkbox_wrapper #checkOne3.--enabled').attr('data-price');
+				var insurancePrice = $('.selectServices__box #checkOne3.--enabled').attr('data-price');
 				if (insurancePrice) {
 					priceValue = parseInt(priceValue) + parseInt(insurancePrice);
 				}
 			}
 
-			var checkOne4_checked = $('.custom_checkbox_wrapper #checkOne4.--enabled').is(':checked');
+			var checkOne4_checked = $('.selectServices__box #checkOne4.--enabled').is(':checked');
 
 			if (checkOne4_checked) {
-				var assistancePrice = $('.custom_checkbox_wrapper #checkOne4.--enabled').attr('data-price');
+				var assistancePrice = $('.selectServices__box #checkOne4.--enabled').attr('data-price');
 				if (assistancePrice) {
 					priceValue = parseInt(priceValue) + parseInt(assistancePrice);
 				}
 			}
 
-			if ($("#priceSlider").length > 0) {
-				var priceSliderValue = parseFloat($("#priceSlider").attr("data-value"));
-				if (priceSliderValue) {
-					var countedVal = priceSliderValue * (1.06 / parseInt(valueTime));
-					priceValue = parseInt(priceValue) - countedVal;
+			var priceRanges = $('.priceSlider');
+		
+			$(priceRanges).each(function(){
+				if ($(this).length > 0) {
+					var priceSliderValue = parseFloat($(this).attr("data-value"));
+					if (priceSliderValue) {
+						var countedVal = priceSliderValue * (1.06 / parseInt(valueTime));
+						priceValue = parseInt(priceValue) - countedVal;
+					}
 				}
-			}
+			});
 
 			if (!priceValue) {
-				$('#finalPrice strong').html('-');
-				$('#finalPriceIndividual strong').html('-');
-				$('#finalPriceWrap').attr('data-domyslna-cena', '-');
+				$('.finalPrice strong').html('-');
+				$('.finalPriceIndividual strong').html('-');
+				$('.finalPriceWrap').attr('data-domyslna-cena', '-');
 			} else {
-				$('#finalPrice strong').html(parseInt(priceValue).toFixed(0).toString().replace('.', ','));
-				$('#finalPriceWrap').attr('data-domyslna-cena', parseInt(priceValue).toFixed(0).toString().replace('.', ','));
-				$('#finalPriceIndividual strong').html(Math.round(priceValue * 1.23).toFixed(0).toString().replace('.', ','));
+				$('.finalPrice strong').html(parseInt(priceValue).toFixed(0).toString().replace('.', ','));
+				$('.finalPriceWrap').attr('data-domyslna-cena', parseInt(priceValue).toFixed(0).toString().replace('.', ','));
+				$('.finalPriceIndividual strong').html(Math.round(priceValue * 1.23).toFixed(0).toString().replace('.', ','));
 			}
 		}
 
@@ -516,12 +525,12 @@
 		});
 
 		// single checkbox
-		$('.custom_checkbox_wrapper #checkOne2').on('change', function () {
+		$('.selectServices__box #checkOne2').on('change', function () {
 			refresh_price();
 		});
 
 		//
-		$('.custom_checkbox_wrapper #checkOne3').on('change', function () {
+		$('.selectServices__box #checkOne3').on('change', function () {
 			refresh_price();
 
 			if ($('#checkOne3').prop('checked')) {
@@ -529,7 +538,7 @@
 			}
 		});
 
-		$('.custom_checkbox_wrapper #checkOne4').on('change', function () {
+		$('.selectServices__box #checkOne4').on('change', function () {
 			refresh_price();
 		});
 

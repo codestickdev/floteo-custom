@@ -741,37 +741,60 @@ address {
   line-height: 1.42857;
 }
 
-.container {
+.container,
+.container-lg {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container:before, .container:after {
+.container:before, .container:after,
+.container-lg:before,
+.container-lg:after {
   content: " ";
   display: table;
 }
 
-.container:after {
+.container:after,
+.container-lg:after {
   clear: both;
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .container-lg {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .container-lg {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .container-lg {
     width: 1170px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-lg {
+    width: 1580px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+
+@media (min-width: 1750px) {
+  .container-lg {
+    width: 1720px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 }
 
@@ -4492,6 +4515,936 @@ tbody.collapse.in {
   border: 2px solid #e85c41;
 }
 
+body.single-wynajem main.subpage_content {
+  background-color: #fff;
+}
+
+.carpageBreadcrumb {
+  padding-bottom: 10px;
+}
+
+.carpageBreadcrumb p {
+  font-size: 10px;
+  line-height: 15px;
+  color: #373E64;
+}
+
+.carpageBreadcrumb p a {
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #373E64;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  padding: 0 5px;
+}
+
+.carpageBreadcrumb p a:first-of-type {
+  padding-left: 0;
+}
+
+.carpageBreadcrumb p a:hover {
+  opacity: .7;
+}
+
+.carpageBreadcrumb p span {
+  font-size: 12px;
+  padding-left: 5px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.carpageSlider {
+  position: relative;
+}
+
+.carpageSlider__contentWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+}
+
+.carpageSlider__title h1 {
+  font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 2.4px;
+  color: #0D154A;
+  text-transform: uppercase;
+}
+
+.carpageSlider__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.carpageSlider__arrows .arrow {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #C2C3C7;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carpageSlider__arrows .arrow--prev img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.carpageSlider__arrows .arrow img {
+  width: 12px;
+}
+
+.carpageSlider__arrows .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+.carpageSlider__arrows .content .currentCar {
+  width: 10px;
+  display: inline-block;
+}
+
+.carpageSlider__arrows .content p {
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: #0D154A;
+  font-weight: 700;
+}
+
+.carpageSlider__slideWrap {
+  padding: 190px 0 125px;
+  z-index: 1;
+}
+
+.carpageSlider__slideWrap .slick-list {
+  margin: 0;
+  overflow: visible;
+}
+
+.carpageSlider .carSlider__wrap {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageSlider .carSlider__flags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 72px;
+}
+
+.carpageSlider .carSlider__extraOffer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 72px;
+  width: 290px;
+  padding: 0 30px;
+  background-color: #FCAC20;
+  -webkit-clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+          clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+  position: relative;
+  right: -35px;
+}
+
+.carpageSlider .carSlider__extraOffer p {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bolder;
+  color: #fff;
+  max-width: 90px;
+  text-transform: uppercase;
+}
+
+.carpageSlider .carSlider__tile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 59px;
+  width: 290px;
+  padding: 0 30px;
+  background-color: #373E64;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageSlider .carSlider__tile p {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: .65px;
+}
+
+.carpageSlider .carSlider__slide {
+  margin: 0;
+  position: relative;
+}
+
+.carpageSlider .carSlider__slide img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.carpageSlider .carSlider__slide.slick-current .carSlider__wrap {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.carpageSlider .carSlider__slide.slick-current .carSlider__tile {
+  background-color: #3987FF;
+}
+
+.carpageSlider .carSpecs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageSlider .carSpecs--toggle {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.carpageSlider .carSpecs__boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px 180px;
+      grid-template-columns: 180px 180px;
+  -ms-grid-rows: 75px;
+      grid-template-rows: 75px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+
+.carpageSlider .carSpecs__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 14px 10px 14px 24px;
+  width: 180px;
+  height: 75px;
+  background-color: #F2F3F7;
+  border-radius: 10px;
+}
+
+.carpageSlider .carSpecs__box[info="gearbox"] {
+  text-transform: capitalize;
+}
+
+.carpageSlider .carSpecs__box .image {
+  width: 30px;
+  height: 20px;
+  background-color: #e1e2e6;
+  margin-bottom: 3px;
+}
+
+.carpageSlider .carSpecs__box p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #0D154A;
+  margin: 0;
+}
+
+.carpageSlider .carSpecs__info {
+  margin-left: 20px;
+}
+
+.carpageSlider .carSpecs__info .colors p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #58595D;
+  margin: 0 0 10px;
+}
+
+.carpageSlider .carSpecs__info .colors__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.carpageSlider .carSpecs__info .colors__color {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border: 1px solid #6B6B6B;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  margin-right: 15px;
+}
+
+.carpageSlider .carSpecs__info .colors__color:last-of-type {
+  margin-right: 0;
+}
+
+.carpageSlider .carSpecs__info .extra ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carpageSlider .carSpecs__info .extra ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #0D154A;
+  padding: 5px 0;
+  position: relative;
+}
+
+.carpageSlider .carSpecs__info .extra ul li:first-of-type {
+  padding-top: 0;
+}
+
+.carpageSlider .carSpecs__info .extra ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+.carpageSlider .carSpecs__info .extra ul li:before {
+  content: '';
+  width: 20px;
+  height: 30px;
+  background-color: #f5f5f5;
+  margin-right: 10px;
+}
+
+.carpageFinancial {
+  position: relative;
+  top: -125px;
+  z-index: 3;
+}
+
+.carpageFinancial__wrap {
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.14);
+  padding: 20px;
+}
+
+.carpageFinancial__wrap .slick-list {
+  overflow: visible;
+}
+
+.carpageFinancial__content {
+  width: 100%;
+}
+
+.carpageFinancial .carCalculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carpageFinancial .carCalculator__selectMethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 375px;
+  height: calc(250px - 40px);
+  margin-right: 60px;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod {
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 15px 0 rgba(5, 31, 75, 0.26);
+          box-shadow: 0 2px 15px 0 rgba(5, 31, 75, 0.26);
+  border-radius: 10px;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod__method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3);
+  height: calc(100% - 10px);
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod__method p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #373E64;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod__method--active {
+  background-color: #2BD396;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.14);
+          box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.14);
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectMethod__method--active p {
+  color: #fff;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__value {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #0D154A;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.carpageFinancial .carCalculator__financial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px;
+  height: calc(250px - 40px);
+  margin-right: 32px;
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson {
+  width: 100%;
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F2F3F7;
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% / 2);
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson__position p {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson__position--active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+          box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+}
+
+.carpageFinancial .carCalculator__financial .selectPerson__position--active p {
+  color: #0D154A;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod {
+  width: 100%;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F2F3F7;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100% / 4);
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__position input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__position label {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__position--active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+          box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+}
+
+.carpageFinancial .carCalculator__financial .selectPeriod__position--active p {
+  color: #0D154A;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers {
+  width: 100%;
+  position: relative;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers .scrollButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 40px;
+  background-color: #D9DADF;
+  border-radius: 0 10px 10px 0;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__wrap {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #F2F3F7;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__overflow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  padding-right: 30px;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85px;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__position input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__position label {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #636675;
+  margin: 0;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__position--active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+          box-shadow: 0 2px 10px 0 rgba(18, 18, 21, 0.16);
+}
+
+.carpageFinancial .carCalculator__financial .selectKilometers__position--active p {
+  color: #0D154A;
+}
+
+.carpageFinancial .carCalculator__services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 74px;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 372px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  height: 92px;
+  border: 1px solid #C2C3C7;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box--checked {
+  background-color: rgba(43, 211, 150, 0.1);
+  border-color: #2BD396;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box--disable {
+  pointer-events: none;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box:nth-child(3), .carpageFinancial .carCalculator__services .selectServices__box:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box label {
+  text-align: center;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box label .image {
+  width: 25px;
+  height: 25px;
+  background-color: #dadada;
+  border-radius: 3px;
+  margin: 0 auto 5px;
+}
+
+.carpageFinancial .carCalculator__services .selectServices__box label span {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.carpageFinancial .carCalculator__price {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap {
+  width: 100%;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap > h2 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #0D154A;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__price {
+  margin-bottom: 10px;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price {
+  text-align: center;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: bolder;
+  color: #0D154A;
+  margin: 0;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price strong {
+  text-align: center;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: bolder;
+  color: #0D154A;
+  margin: 0 10px 0 0;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__button #buyNow {
+  width: 100%;
+  height: 50px;
+  background-color: #2BD396;
+  border-radius: 25px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  cursor: pointer;
+  padding: 0;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__button #buyNow:hover {
+  opacity: .7;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__info {
+  text-align: center;
+  padding: 0 15px;
+  margin: 10px 0 0;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__info p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #636675;
+  margin: 0;
+  text-align: center;
+}
+
+.carpageFinancial .carCalculator__price .finalPriceWrap__info p span {
+  display: block;
+  width: 100%;
+  color: #0D154A;
+}
+
 @media (min-width: 1210px) {
   .container {
     width: 1170px;
@@ -8093,22 +9046,26 @@ table.vs tr td:last-of-type {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  border: 1px solid #e3e3e7;
   font-weight: 300;
   color: #47515b;
-  margin: 3px;
-  border-radius: 25px;
-  padding: 15px;
-  height: 36px;
+  padding: 0 10px;
   text-align: center;
   cursor: pointer;
-  min-width: 210px;
   position: relative;
 }
 
+.price-slider .tooltip-main {
+  display: none !important;
+}
+
 .price-slider .slider.slider-horizontal .slider-track {
-  height: 2px;
+  height: 5px;
   margin-top: -1px;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  background: #F2F2F2;
+  width: calc(100% + 20px);
+  margin-left: -10px;
 }
 
 .price-slider .slider-handle {
@@ -8116,7 +9073,7 @@ table.vs tr td:last-of-type {
   width: 20px;
   height: 20px;
   background: #00d198;
-  border-radius: 6px;
+  border-radius: 100%;
 }
 
 .price-slider .slider-handle:after {
@@ -8129,7 +9086,7 @@ table.vs tr td:last-of-type {
   background: #fff;
   width: 8px;
   height: 8px;
-  border-radius: 2px;
+  border-radius: 100%;
 }
 
 .price-slider .price-slider__value {

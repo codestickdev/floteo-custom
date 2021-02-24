@@ -107,9 +107,11 @@ add_action('widgets_init', 'floteo_custom_widgets_init');
  */
 function floteo_custom_scripts()
 {
-	wp_enqueue_style('floteo-custom-style', get_stylesheet_uri());
+	// wp_enqueue_style('floteo-custom-style', get_stylesheet_uri());
 
 	wp_enqueue_style('jquery-ui-css', get_stylesheet_directory_uri() . '/css/jquery-ui.min.css');
+	wp_enqueue_script('jquery-ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array('jquery'), '', true);
+	wp_enqueue_script('cookie-js', get_template_directory_uri() . '/js/jquery.cookie.js', array('jquery'), '', true);
 
 	wp_enqueue_style('style-css', get_stylesheet_directory_uri() . '/css/style.css?v=20190776');
 
@@ -117,15 +119,11 @@ function floteo_custom_scripts()
 
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true);
 
-	wp_enqueue_script('slick-js', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '', true);
+	// Slick
+	wp_enqueue_style('Lightbox2-css', get_stylesheet_directory_uri() . '/plugins/slick/slick-theme.css');
+	wp_enqueue_script('slick-js', get_template_directory_uri() . '/plugins/slick/slick.min.js', array('jquery'), '', true);
 
 	wp_enqueue_script('input-slider-js', get_template_directory_uri() . '/js/bootstrap-slider.js', array('jquery'), '', true);
-
-	// wp_enqueue_script( 'choosen-jquery', get_template_directory_uri() . '/js/chosen.jquery.min.js', array('jquery'), '', true );
-
-	wp_enqueue_script('jquery-ui', get_template_directory_uri() . '/js/jquery-ui.min.js', array('jquery'), '', true);
-
-	wp_enqueue_script('cookie-js', get_template_directory_uri() . '/js/jquery.cookie.js', array('jquery'), '', true);
 
 	//wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom-min.js', array('jquery'), '', true );
 	wp_enqueue_script('custom-js-non-min', get_template_directory_uri() . '/js/custom.js', array('jquery'), '1.981191111225978', true);
@@ -139,6 +137,9 @@ function floteo_custom_scripts()
 	//Lightbox2
 	wp_enqueue_style('Lightbox2-css', get_stylesheet_directory_uri() . '/css/lightbox.css');
 	wp_enqueue_script('Lightbox2-js', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '', true);
+
+	// Product page
+	wp_enqueue_script('product-page', get_template_directory_uri() . '/js/_productPage.js', array('jquery'), '', true);
 
 	//Multiselect
 	// wp_enqueue_style('Lightbox2-css', get_stylesheet_directory_uri() . '/plugins/multiselect/css/example-styles.css');
@@ -172,10 +173,13 @@ function create_post_type()
 			'has_archive' => false,
 			'menu_icon' => 'dashicons-feedback',
 			'rewrite' => array('slug' => 'wynajem-dlugoterminowy'),
+			'hierarchical' => true,
 			'supports' => array(
 				'title',
 				'editor',
 				'thumbnail',
+				'revisions',
+				'page-attributes',
 			),
 			'taxonomies' => array(
 				'category'
@@ -773,3 +777,4 @@ function slugify($text)
   }
   return $text;
 }
+

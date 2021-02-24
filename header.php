@@ -7,7 +7,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="robots" contect="noindex,follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo home_url() ?>/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo home_url() ?>/favicon-32x32.png">
