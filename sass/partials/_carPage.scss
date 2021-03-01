@@ -376,8 +376,86 @@ body.single-wynajem{
         }
     }
 }
-$heightFinancial: 250px;
+@media (max-width: 1599px){
+    .carpageSlider{
+        &__title{
+            h1{
+                max-width: 560px;
+            }
+        }
+    }
+}
+@media (max-width: 1419px){
+    .carpageSlider{
+        &__title{
+            padding-left: 0;
 
+            h1{
+                font-size: 45px;
+                line-height: 54px;
+            }
+        }
+        .carpageBestoffer{
+            height: 72px;
+
+            .info{
+                display: flex;
+                align-items: center;
+                padding: 0 7px;
+                width: 100px;
+
+                p{
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+            }
+            .content{
+                padding: 10px;
+            }
+        }
+        .carSpecs{
+            left: 25%;
+
+            &__boxes{
+                grid-template-columns: 140px 140px;
+            }
+            &__box{
+                width: 100%;
+                padding: 14px 10px 14px 14px;
+                border-radius: 5px;
+            }
+
+            &__info{
+                .colors{
+                    p{
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                    &__color{
+                        width: 28px;
+                        height: 28px;
+                        margin-right: 8px;
+                    }
+                }
+                .extra{
+                    ul{
+                        li{
+                            font-size: 12px;
+                            line-height: 15px;
+
+                            &:before{
+                                width: 18px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+$heightFinancial: 250px;
 .carpageFinancial{
     position: relative;
     top: -125px;
@@ -595,6 +673,7 @@ $heightFinancial: 250px;
                     height: 40px;
                     background-color: #D9DADF;
                     border-radius: 0 10px 10px 0;
+                    z-index: 2;
                 }
 
                 &__title{
@@ -815,6 +894,148 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1749px){
+    .carpageFinancial{
+        .carCalculator{
+            &__services{
+                margin-right: 26px;
+
+                .selectServices{
+                    &__box{
+                        width: 170px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1599px){
+    .carpageFinancial{
+        .carCalculator{
+            &__selectMethod{
+                margin-right: 30px;
+            }
+            &__financial{
+                margin-right: 24px;
+            }
+            &__services{
+                .selectServices{
+                    &__box{
+                        width: 145px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1419px){
+    $heightFinancial: 220px;
+
+    .carpageFinancial{
+        &__wrap{
+            height: $heightFinancial;
+        }
+        .carCalculator{
+            &__selectMethod{
+                margin-right: 20px;
+                height: calc(#{$heightFinancial} - 40px);
+
+                .selectMethod{
+                    height: 60px;
+                    border-radius: 5px;
+
+                    &__method{
+                        border-radius: 5px;
+
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .selectDeposit{
+                    .depositValue{
+                        &__title{
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                        &__value{
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            &__financial{
+                width: 290px;
+                height: calc(#{$heightFinancial} - 40px);
+
+                .selectPerson,
+                .selectPeriod,
+                .selectKilometers{
+                    &__wrap{
+                        border-radius: 5px;
+                    }
+                    &__title{
+                        font-size: 12px;
+                        line-height: 15px;
+                        display: block;
+                        margin: 0 0 3px;
+                    }
+                }
+            }
+            &__services{
+                margin-right: 14px;
+
+                .selectServices{
+                    &__box{
+                        width: 125px;
+                        height: 82px;
+
+                        label{
+                            span{
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__price{
+                .finalPriceWrap{
+                    &>h2{
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    &__price{
+                        .final-price__price{
+                            font-size: 36px;
+                            line-height: 46px;
+
+                            strong{
+                                font-size: 36px;
+                                line-height: 46px;
+                            }
+                        }
+                    }
+                    &__button{
+                        #buyNow{
+                            height: 40px;
+                            line-height: 40px;
+                        }
+                    }
+                    &__info{
+                        p{
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .carpageContent{
     display: flex;
     justify-content: space-between;
@@ -889,6 +1110,37 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1419px){
+    .carpageContent{
+        &__wrapper{
+            width: calc(100% - 335px);
+        }
+        .carpageSidebar{
+            width: 310px;
+            padding: 26px 30px;
+            border-radius: 5px;
+
+            &__wrap{
+                .image{
+                    margin: 0 0 20px;
+                }
+                h3{
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                .phone{
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
 .carpageWyposazenie{
     padding: 40px 55px 35px;
     border-bottom: 1px solid #D8D8D8;
@@ -925,6 +1177,30 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1419px){
+    .carpageWyposazenie{
+        padding: 30px;
+
+        &__heading{
+            margin: 0 0 20px;
+
+            h2{
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+        &__content{
+            ul{
+                li{
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 .carpageSpecinfo{
     background-color: #0D154A;
     box-shadow: 0 0 30px rgba(0,0,0,0.1);
@@ -971,6 +1247,28 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1419px){
+    .carpageSpecinfo{
+        border-radius: 5px;
+
+        &__wrap{
+            .image{
+                width: 32px;
+                height: 40px;
+            }
+            h3{
+                font-size: 21px;
+                line-height: 26px;
+            }
+            a{
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 .carpageSizes{
     margin-bottom: 50px;
 
@@ -1030,6 +1328,40 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1419px){
+    .carpageSizes{
+        &__heading{
+            margin: 0 0 25px;
+
+            h2{
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+        &__sizes{
+            width: 48%;
+
+            .image{
+                width: 180px;
+                margin-right: 25px;
+
+                svg{
+                    width: 130px;
+                    height: 110px;
+                }
+            }
+            .content{
+                width: calc(100% - 215px);
+
+                p{
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
 .carpageGallery{
     margin: 0 0 50px;
 
@@ -1067,6 +1399,22 @@ $heightFinancial: 250px;
         }
     }
 }
+@media (max-width: 1419px){
+    .carpageGallery{
+        &__heading{
+            margin: 0 0 25px;
+
+            h2{
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+        &__image{
+            height: 175px;
+        }
+    }
+}
+
 .carpageSpecial{
     background-color: #fff;
     box-shadow: 0 0 35px rgba(0,0,0,0.08);
@@ -1165,6 +1513,51 @@ $heightFinancial: 250px;
 
                 &:hover{
                     opacity: .7;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1419px){
+    .carpageSpecial{
+        padding: 22px 30px 30px;
+
+        &__wrap{
+            &>div{
+                width: calc(100% / 3 - 10px);
+            }
+            .info{
+                &__icon{
+                    margin: 0 0 20px;
+
+                    .icon{
+                        height: 28px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+                h3{
+                    font-size: 21px;
+                    line-height: 26px;
+                }
+            }
+            .specs{
+                ul{
+                    li{
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .link{
+                a{
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
                 }
             }
         }
@@ -1300,6 +1693,61 @@ $heightFinancial: 250px;
             span{
                 font-size: 22px;
                 font-weight: 500;
+            }
+        }
+    }
+}
+@media (max-width: 1749px){
+    .relatedTile{
+        width: 510px;
+    }
+}
+@media (max-width: 1599px){
+    .relatedTile{
+        width: 450px;
+    }
+}
+@media (max-width: 1419px){
+    .relatedTile{
+        width: 370px;
+
+        &__thumb{
+            height: 190px;
+        }
+        &__content{
+            padding: 16px 20px;
+
+            h3{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .flags{
+                &__flag{
+                    height: 35px;
+                    line-height: 35px;
+                    padding: 0 15px;
+                    font-size: 14px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        &__info{
+            padding: 0 18px 20px 18px;
+
+            .content{
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-bottom: 5px;
+                }
+            }
+            .price{
+                font-size: 24px;
+                line-height: 30px;
+
+                span{
+                    font-size: 18px;
+                }
             }
         }
     }

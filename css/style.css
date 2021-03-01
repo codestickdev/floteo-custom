@@ -782,6 +782,14 @@ address {
   }
 }
 
+@media (min-width: 1420px) {
+  .container-lg {
+    width: 1400px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+
 @media (min-width: 1600px) {
   .container-lg {
     width: 1580px;
@@ -4977,6 +4985,71 @@ body.single-wynajem main.subpage_content {
   margin-right: 10px;
 }
 
+@media (max-width: 1599px) {
+  .carpageSlider__title h1 {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 1419px) {
+  .carpageSlider__title {
+    padding-left: 0;
+  }
+  .carpageSlider__title h1 {
+    font-size: 45px;
+    line-height: 54px;
+  }
+  .carpageSlider .carpageBestoffer {
+    height: 72px;
+  }
+  .carpageSlider .carpageBestoffer .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 7px;
+    width: 100px;
+  }
+  .carpageSlider .carpageBestoffer .info p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .carpageSlider .carpageBestoffer .content {
+    padding: 10px;
+  }
+  .carpageSlider .carSpecs {
+    left: 25%;
+  }
+  .carpageSlider .carSpecs__boxes {
+    -ms-grid-columns: 140px 140px;
+        grid-template-columns: 140px 140px;
+  }
+  .carpageSlider .carSpecs__box {
+    width: 100%;
+    padding: 14px 10px 14px 14px;
+    border-radius: 5px;
+  }
+  .carpageSlider .carSpecs__info .colors p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .carpageSlider .carSpecs__info .colors__color {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+  .carpageSlider .carSpecs__info .extra ul li {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .carpageSlider .carSpecs__info .extra ul li:before {
+    width: 18px;
+    height: 25px;
+  }
+}
+
 .carpageFinancial {
   position: relative;
   top: -125px;
@@ -5272,6 +5345,7 @@ body.single-wynajem main.subpage_content {
   height: 40px;
   background-color: #D9DADF;
   border-radius: 0 10px 10px 0;
+  z-index: 2;
 }
 
 .carpageFinancial .carCalculator__financial .selectKilometers__title {
@@ -5532,6 +5606,104 @@ body.single-wynajem main.subpage_content {
   color: #0D154A;
 }
 
+@media (max-width: 1749px) {
+  .carpageFinancial .carCalculator__services {
+    margin-right: 26px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box {
+    width: 170px;
+  }
+}
+
+@media (max-width: 1599px) {
+  .carpageFinancial .carCalculator__selectMethod {
+    margin-right: 30px;
+  }
+  .carpageFinancial .carCalculator__financial {
+    margin-right: 24px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box {
+    width: 145px;
+  }
+}
+
+@media (max-width: 1419px) {
+  .carpageFinancial__wrap {
+    height: 220px;
+  }
+  .carpageFinancial .carCalculator__selectMethod {
+    margin-right: 20px;
+    height: calc(220px - 40px);
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectMethod {
+    height: 60px;
+    border-radius: 5px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectMethod__method {
+    border-radius: 5px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectMethod__method p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__value {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .carpageFinancial .carCalculator__financial {
+    width: 290px;
+    height: calc(220px - 40px);
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson__wrap,
+  .carpageFinancial .carCalculator__financial .selectPeriod__wrap,
+  .carpageFinancial .carCalculator__financial .selectKilometers__wrap {
+    border-radius: 5px;
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson__title,
+  .carpageFinancial .carCalculator__financial .selectPeriod__title,
+  .carpageFinancial .carCalculator__financial .selectKilometers__title {
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+    margin: 0 0 3px;
+  }
+  .carpageFinancial .carCalculator__services {
+    margin-right: 14px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box {
+    width: 125px;
+    height: 82px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box label span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap > h2 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price strong {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__button #buyNow {
+    height: 40px;
+    line-height: 40px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__info p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 .carpageContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5630,6 +5802,32 @@ body.single-wynajem main.subpage_content {
   margin: 0;
 }
 
+@media (max-width: 1419px) {
+  .carpageContent__wrapper {
+    width: calc(100% - 335px);
+  }
+  .carpageContent .carpageSidebar {
+    width: 310px;
+    padding: 26px 30px;
+    border-radius: 5px;
+  }
+  .carpageContent .carpageSidebar__wrap .image {
+    margin: 0 0 20px;
+  }
+  .carpageContent .carpageSidebar__wrap h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .carpageContent .carpageSidebar__wrap p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .carpageContent .carpageSidebar__wrap .phone {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .carpageWyposazenie {
   padding: 40px 55px 35px;
   border-bottom: 1px solid #D8D8D8;
@@ -5665,6 +5863,24 @@ body.single-wynajem main.subpage_content {
   color: #0D154A;
   letter-spacing: .5px;
   padding-bottom: 15px;
+}
+
+@media (max-width: 1419px) {
+  .carpageWyposazenie {
+    padding: 30px;
+  }
+  .carpageWyposazenie__heading {
+    margin: 0 0 20px;
+  }
+  .carpageWyposazenie__heading h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .carpageWyposazenie__content ul li {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
 }
 
 .carpageSpecinfo {
@@ -5722,6 +5938,25 @@ body.single-wynajem main.subpage_content {
 
 .carpageSpecinfo__wrap a:hover {
   opacity: .7;
+}
+
+@media (max-width: 1419px) {
+  .carpageSpecinfo {
+    border-radius: 5px;
+  }
+  .carpageSpecinfo__wrap .image {
+    width: 32px;
+    height: 40px;
+  }
+  .carpageSpecinfo__wrap h3 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .carpageSpecinfo__wrap a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
 }
 
 .carpageSizes {
@@ -5795,6 +6030,34 @@ body.single-wynajem main.subpage_content {
   color: #0D154A;
 }
 
+@media (max-width: 1419px) {
+  .carpageSizes__heading {
+    margin: 0 0 25px;
+  }
+  .carpageSizes__heading h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .carpageSizes__sizes {
+    width: 48%;
+  }
+  .carpageSizes__sizes .image {
+    width: 180px;
+    margin-right: 25px;
+  }
+  .carpageSizes__sizes .image svg {
+    width: 130px;
+    height: 110px;
+  }
+  .carpageSizes__sizes .content {
+    width: calc(100% - 215px);
+  }
+  .carpageSizes__sizes .content p {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+}
+
 .carpageGallery {
   margin: 0 0 50px;
 }
@@ -5837,6 +6100,19 @@ body.single-wynajem main.subpage_content {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1419px) {
+  .carpageGallery__heading {
+    margin: 0 0 25px;
+  }
+  .carpageGallery__heading h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .carpageGallery__image {
+    height: 175px;
+  }
 }
 
 .carpageSpecial {
@@ -5964,6 +6240,39 @@ body.single-wynajem main.subpage_content {
 
 .carpageSpecial__wrap .link a:hover {
   opacity: .7;
+}
+
+@media (max-width: 1419px) {
+  .carpageSpecial {
+    padding: 22px 30px 30px;
+  }
+  .carpageSpecial__wrap > div {
+    width: calc(100% / 3 - 10px);
+  }
+  .carpageSpecial__wrap .info__icon {
+    margin: 0 0 20px;
+  }
+  .carpageSpecial__wrap .info__icon .icon {
+    height: 28px;
+  }
+  .carpageSpecial__wrap .info__icon p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .carpageSpecial__wrap .info h3 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .carpageSpecial__wrap .specs ul li {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+  }
+  .carpageSpecial__wrap .link a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
 }
 
 .carpageRelated--best {
@@ -6127,6 +6436,56 @@ body.single-wynajem main.subpage_content {
 .relatedTile__info .price span {
   font-size: 22px;
   font-weight: 500;
+}
+
+@media (max-width: 1749px) {
+  .relatedTile {
+    width: 510px;
+  }
+}
+
+@media (max-width: 1599px) {
+  .relatedTile {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1419px) {
+  .relatedTile {
+    width: 370px;
+  }
+  .relatedTile__thumb {
+    height: 190px;
+  }
+  .relatedTile__content {
+    padding: 16px 20px;
+  }
+  .relatedTile__content h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .relatedTile__content .flags__flag {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .relatedTile__info {
+    padding: 0 18px 20px 18px;
+  }
+  .relatedTile__info .content p {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 5px;
+  }
+  .relatedTile__info .price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .relatedTile__info .price span {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1210px) {

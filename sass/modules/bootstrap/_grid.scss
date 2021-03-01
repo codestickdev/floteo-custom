@@ -22,6 +22,11 @@
   }
 }
 .container-lg{
+  @media (min-width: 1420px){
+    width: 1400px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
   @media (min-width: 1600px){
     width: 1580px;
     padding-left: 9px;
