@@ -110,4 +110,13 @@
             }
         });
     });
+
+    /* Sticky sidebar */
+
+    $(document).ready(function(){
+        $('.carpageContent__sidebar').stickySidebar({
+            topSpacing: 140,
+            // bottomSpacing: 60
+        });
+    });
 })(jQuery);

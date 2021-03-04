@@ -172,6 +172,7 @@
 	gtag('config', 'AW-759109037');
 </script>
 <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/floteo-custom/plugins/multiselect/js/jquery.multi-select.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/floteo-custom/plugins/sticky-sidebar/dist/jquery.sticky-sidebar.js"></script>
 
 <?php wp_footer(); ?>
 </body>

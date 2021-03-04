@@ -4525,7 +4525,7 @@ tbody.collapse.in {
 
 body.single-wynajem main.subpage_content {
   background-color: #fff;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .carpageBreadcrumb {
@@ -4565,6 +4565,7 @@ body.single-wynajem main.subpage_content {
 
 .carpageSlider {
   position: relative;
+  overflow: hidden;
 }
 
 .carpageSlider__contentWrap {
@@ -4677,6 +4678,7 @@ body.single-wynajem main.subpage_content {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 2;
 }
 
 .carpageSlider__arrows .arrow {
@@ -5047,6 +5049,141 @@ body.single-wynajem main.subpage_content {
   .carpageSlider .carSpecs__info .extra ul li:before {
     width: 18px;
     height: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .carpageSlider__title h1 {
+    font-size: 38px;
+    line-height: 45px;
+    max-width: 44%;
+  }
+  .carpageSlider .carpageBestoffer {
+    height: 58px;
+  }
+  .carpageSlider .carpageBestoffer .info p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .carpageSlider .carpageBestoffer .image {
+    width: 100px;
+  }
+  .carpageSlider .carpageBestoffer .content h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .carpageSlider .carpageBestoffer .content .price {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .carpageSlider .carpageBestoffer .content .price span {
+    font-size: 12px;
+  }
+  .carpageSlider__arrows .arrow {
+    height: 35px;
+    width: 35px;
+  }
+  .carpageSlider__arrows .arrow img {
+    width: 6px;
+  }
+  .carpageSlider__arrows .content {
+    padding: 0 8px;
+  }
+  .carpageSlider__arrows .content p {
+    font-size: 11px;
+  }
+  .carpageSlider .carSpecs {
+    left: 35%;
+  }
+  .carpageSlider .carSpecs__boxes {
+    -ms-grid-columns: 100px 100px;
+        grid-template-columns: 100px 100px;
+    -ms-grid-rows: 60px;
+        grid-template-rows: 60px;
+  }
+  .carpageSlider .carSpecs__box {
+    height: 100%;
+    padding: 8px 6px 8px 8px;
+  }
+  .carpageSlider .carSpecs__box .image {
+    width: 20px;
+    height: 15px;
+  }
+  .carpageSlider .carSpecs__box p {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .carpageSlider .carSpecs__info {
+    margin-left: 10px;
+  }
+  .carpageSlider .carSpecs__info .colors p {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 7px;
+  }
+  .carpageSlider .carSpecs__info .colors__wrap {
+    padding-left: 8px;
+    margin-bottom: 10px;
+  }
+  .carpageSlider .carSpecs__info .colors__color {
+    width: 20px;
+    height: 22px;
+    margin-right: 6px;
+  }
+  .carpageSlider .carSpecs__info .extra ul li {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .carpageSlider .carSpecs__info .extra ul li:before {
+    width: 15px;
+    height: 21px;
+    margin-right: 6px;
+  }
+  .carpageSlider .carSlider {
+    padding: 150px 0 125px;
+  }
+  .carpageSlider .carSlider .slick-list {
+    margin: 0 30px;
+  }
+  .carpageSlider .carSlider__slide {
+    margin: 0 -30px;
+  }
+  .carpageSlider .carSlider__wrap img {
+    height: 228px !important;
+  }
+  .carpageSlider .carSlider__flags {
+    height: 52px;
+  }
+  .carpageSlider .carSlider__extraOffer {
+    height: 52px;
+    width: 220px;
+  }
+  .carpageSlider .carSlider__extraOffer p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .carpageSlider .carSlider__tile {
+    height: 45px;
+    width: 210px;
+  }
+  .carpageSlider .carSlider__tile p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carpageSlider .carpageBestoffer {
+    display: none;
+  }
+  .carpageSlider__arrows {
+    display: none;
+  }
+  .carpageSlider .carSpecs {
+    display: none;
+  }
+  .carpageSlider .carSlider {
+    padding: 50px 0 0;
   }
 }
 
@@ -5704,6 +5841,114 @@ body.single-wynajem main.subpage_content {
   }
 }
 
+@media (max-width: 1199px) {
+  .carpageFinancial__wrap {
+    height: 220px;
+  }
+  .carpageFinancial .carCalculator__selectMethod {
+    margin-right: 15px;
+    height: calc(220px - 40px);
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectMethod {
+    height: 50px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectMethod__method p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__title {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .carpageFinancial .carCalculator__selectMethod .selectDeposit .depositValue__value {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .carpageFinancial .carCalculator__financial {
+    width: 240px;
+    height: calc(220px - 40px);
+    margin-right: 15px;
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson__wrap,
+  .carpageFinancial .carCalculator__financial .selectPeriod__wrap,
+  .carpageFinancial .carCalculator__financial .selectKilometers__wrap {
+    height: 35px;
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson__title,
+  .carpageFinancial .carCalculator__financial .selectPeriod__title,
+  .carpageFinancial .carCalculator__financial .selectKilometers__title {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson__position p,
+  .carpageFinancial .carCalculator__financial .selectPerson__position label,
+  .carpageFinancial .carCalculator__financial .selectPeriod__position p,
+  .carpageFinancial .carCalculator__financial .selectPeriod__position label,
+  .carpageFinancial .carCalculator__financial .selectKilometers__position p,
+  .carpageFinancial .carCalculator__financial .selectKilometers__position label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .carpageFinancial .carCalculator__financial .selectPerson .scrollButton,
+  .carpageFinancial .carCalculator__financial .selectPeriod .scrollButton,
+  .carpageFinancial .carCalculator__financial .selectKilometers .scrollButton {
+    width: 25px;
+    height: 35px;
+  }
+  .carpageFinancial .carCalculator__services {
+    margin-right: 14px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box {
+    width: 103px;
+    height: 65px;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box label .image {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+  }
+  .carpageFinancial .carCalculator__services .selectServices__box label span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap > h2 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__price .final-price__price strong {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__button #buyNow {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+  .carpageFinancial .carCalculator__price .finalPriceWrap__info p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carpageFinancial {
+    top: 0;
+  }
+  .carpageFinancial__wrap {
+    height: auto;
+  }
+  .carpageFinancial .carCalculator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .carpageContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5736,8 +5981,12 @@ body.single-wynajem main.subpage_content {
   pointer-events: all;
 }
 
-.carpageContent .carpageSidebar {
+.carpageContent__sidebar {
   width: 410px;
+}
+
+.carpageContent__sidebar .carpageSidebar {
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -5752,7 +6001,7 @@ body.single-wynajem main.subpage_content {
   padding: 36px 40px;
 }
 
-.carpageContent .carpageSidebar__wrap {
+.carpageContent__sidebar .carpageSidebar__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5768,7 +6017,7 @@ body.single-wynajem main.subpage_content {
           justify-content: center;
 }
 
-.carpageContent .carpageSidebar__wrap .icon {
+.carpageContent__sidebar .carpageSidebar__wrap .icon {
   width: 64px;
   height: 64px;
   background-color: #0D154A;
@@ -5776,7 +6025,7 @@ body.single-wynajem main.subpage_content {
   margin: 0 0 30px;
 }
 
-.carpageContent .carpageSidebar__wrap h3 {
+.carpageContent__sidebar .carpageSidebar__wrap h3 {
   font-size: 22px;
   line-height: 26px;
   color: #0D154A;
@@ -5785,7 +6034,7 @@ body.single-wynajem main.subpage_content {
   margin: 0 0 20px;
 }
 
-.carpageContent .carpageSidebar__wrap p {
+.carpageContent__sidebar .carpageSidebar__wrap p {
   font-size: 16px;
   line-height: 23px;
   color: #333753;
@@ -5793,7 +6042,7 @@ body.single-wynajem main.subpage_content {
   margin: 0 0 15px;
 }
 
-.carpageContent .carpageSidebar__wrap .phone {
+.carpageContent__sidebar .carpageSidebar__wrap .phone {
   font-size: 28px;
   line-height: 34px;
   font-weight: 700;
@@ -5806,25 +6055,68 @@ body.single-wynajem main.subpage_content {
   .carpageContent__wrapper {
     width: calc(100% - 335px);
   }
-  .carpageContent .carpageSidebar {
+  .carpageContent__sidebar {
     width: 310px;
+  }
+  .carpageContent__sidebar .carpageSidebar {
     padding: 26px 30px;
     border-radius: 5px;
   }
-  .carpageContent .carpageSidebar__wrap .image {
+  .carpageContent__sidebar .carpageSidebar__wrap .icon {
     margin: 0 0 20px;
   }
-  .carpageContent .carpageSidebar__wrap h3 {
+  .carpageContent__sidebar .carpageSidebar__wrap h3 {
     font-size: 18px;
     line-height: 23px;
   }
-  .carpageContent .carpageSidebar__wrap p {
+  .carpageContent__sidebar .carpageSidebar__wrap p {
     font-size: 14px;
     line-height: 19px;
   }
-  .carpageContent .carpageSidebar__wrap .phone {
+  .carpageContent__sidebar .carpageSidebar__wrap .phone {
     font-size: 24px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .carpageContent__wrapper {
+    width: calc(100% - 245px);
+  }
+  .carpageContent__sidebar {
+    width: 245px;
+  }
+  .carpageContent__sidebar .carpageSidebar {
+    padding: 20px 15px;
+  }
+  .carpageContent__sidebar .carpageSidebar__wrap .icon {
+    width: 54px;
+    height: 54px;
+  }
+  .carpageContent__sidebar .carpageSidebar__wrap h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .carpageContent__sidebar .carpageSidebar__wrap p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .carpageContent__sidebar .carpageSidebar__wrap .phone {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carpageContent {
+    top: 0;
+  }
+  .carpageContent__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .carpageContent__sidebar {
+    display: none;
   }
 }
 
@@ -5880,6 +6172,20 @@ body.single-wynajem main.subpage_content {
     font-size: 14px;
     line-height: 18px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .carpageWyposazenie {
+    padding: 20px 15px;
+  }
+  .carpageWyposazenie__heading h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .carpageWyposazenie__content ul li {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -5956,6 +6262,23 @@ body.single-wynajem main.subpage_content {
     height: 40px;
     line-height: 40px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .carpageSpecinfo {
+    margin-bottom: 30px;
+  }
+  .carpageSpecinfo__wrap h3 {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 30px;
+  }
+  .carpageSpecinfo__wrap a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    min-width: 170px;
   }
 }
 
@@ -6058,6 +6381,27 @@ body.single-wynajem main.subpage_content {
   }
 }
 
+@media (max-width: 1199px) {
+  .carpageSizes__heading h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .carpageSizes__sizes .image {
+    width: 140px;
+  }
+  .carpageSizes__sizes .image svg {
+    width: 110px;
+    height: 90px;
+  }
+  .carpageSizes__sizes .content {
+    width: calc(100% - 155px);
+  }
+  .carpageSizes__sizes .content p {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+}
+
 .carpageGallery {
   margin: 0 0 50px;
 }
@@ -6112,6 +6456,18 @@ body.single-wynajem main.subpage_content {
   }
   .carpageGallery__image {
     height: 175px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .carpageGallery__heading h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .carpageGallery__image {
+    height: 125px;
+    width: calc(100% / 3 - 8px);
+    margin-bottom: 16px;
   }
 }
 
@@ -6275,6 +6631,42 @@ body.single-wynajem main.subpage_content {
   }
 }
 
+@media (max-width: 1199px) {
+  .carpageSpecial__wrap .info__icon {
+    margin: 0 0 15px;
+  }
+  .carpageSpecial__wrap .info__icon .icon {
+    height: 24px;
+    width: 18px;
+  }
+  .carpageSpecial__wrap .info__icon p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .carpageSpecial__wrap .info h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .carpageSpecial__wrap .specs ul {
+    padding: 0 0 0 20px;
+  }
+  .carpageSpecial__wrap .specs ul li {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 8px;
+  }
+  .carpageSpecial__wrap .specs ul li:before {
+    left: -20px;
+    width: 15px;
+    height: 9px;
+  }
+  .carpageSpecial__wrap .link a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+  }
+}
+
 .carpageRelated--best {
   margin-top: 70px;
   position: relative;
@@ -6320,6 +6712,16 @@ body.single-wynajem main.subpage_content {
       flex-wrap: wrap;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 1199px) {
+  .carpageRelated__heading {
+    margin: 0 0 25px;
+  }
+  .carpageRelated__heading h2 {
+    font-size: 21px;
+    line-height: 24px;
+  }
 }
 
 .relatedTile {
@@ -6485,6 +6887,38 @@ body.single-wynajem main.subpage_content {
   }
   .relatedTile__info .price span {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .relatedTile {
+    width: 305px;
+  }
+  .relatedTile__content {
+    padding: 10px 14px;
+  }
+  .relatedTile__content h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .relatedTile__content .flags__flag {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+  .relatedTile__info {
+    padding: 0 14px 18px;
+  }
+  .relatedTile__info .content p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .relatedTile__info .price {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .relatedTile__info .price span {
+    font-size: 14px;
   }
 }
 

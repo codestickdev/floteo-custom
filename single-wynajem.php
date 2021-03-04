@@ -556,13 +556,15 @@ if( $the_query->have_posts() ): ?>
 		</div>
 		<?php endwhile; ?>
 	</div>
-	<div class="carpageSidebar">
-		<div class="carpageSidebar__wrap">
-			<div class="icon"></div>
-			<h3>Masz pytania odnośnie oferty?</h3>
-			<p>Skontaktuj się z naszą infolinią a udzielimy Ci niezbędnych informacji.</p>
-			<p>Nasi doradcy są do Twojej dyspozycji</p>
-			<h4 class="phone">+48 552 133 459</h4>
+	<div class="carpageContent__sidebar">
+		<div class="carpageSidebar">
+			<div class="carpageSidebar__wrap">
+				<div class="icon"></div>
+				<h3>Masz pytania odnośnie oferty?</h3>
+				<p>Skontaktuj się z naszą infolinią a udzielimy Ci niezbędnych informacji.</p>
+				<p>Nasi doradcy są do Twojej dyspozycji</p>
+				<h4 class="phone">+48 552 133 459</h4>
+			</div>
 		</div>
 	</div>
 </section>

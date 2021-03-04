@@ -123,6 +123,9 @@ function floteo_custom_scripts()
 	wp_enqueue_style('Lightbox2-css', get_stylesheet_directory_uri() . '/plugins/slick/slick-theme.css');
 	wp_enqueue_script('slick-js', get_template_directory_uri() . '/plugins/slick/slick.min.js', array('jquery'), '', true);
 
+	// Sticky-sidebar
+	// wp_enqueue_script('sticky-sidebar', get_template_directory_uri() . '/plugins/sticky-sidebar/dist/sticky-sidebar.js', array('jquery'), '', true);
+
 	wp_enqueue_script('input-slider-js', get_template_directory_uri() . '/js/bootstrap-slider.js', array('jquery'), '', true);
 
 	//wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom-min.js', array('jquery'), '', true );
